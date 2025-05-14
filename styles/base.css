@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', 'Roboto', sans-serif; 
+}
+
 nav{
     background-color: rgb(71, 69, 68);
     display: grid;
@@ -14,10 +18,16 @@ nav a {
     transition: 0.3s ease;
 }
 
+nav a:hover {
+    background-color: #ddd;
+    color: #000; 
+}
+
 main{
-    max-width: px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 1rem;
     gap: 1.5rem;
     padding: 0 1rem;
 }
@@ -29,14 +39,11 @@ main{
      margin: 0 auto;
  }
 
-
-
-
-
 header{
+
     text-align: center;
     background: coral;
-    color: aliceblue;
+    color: #1a1a1a;
     padding: 1rem;
 }
 
@@ -96,7 +103,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #ff7f50;
-    color: #f0f8ff;
+    color: #1a1a1a;
     font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -106,6 +113,7 @@ footer {
     margin-top: 8rem;
     list-style-type: disc;
     padding-left: 2rem;
+    color: #470d0d;
 }
 
 figure{
