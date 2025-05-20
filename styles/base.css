@@ -4,8 +4,9 @@ body {
 
 nav{
     background-color: rgb(71, 69, 68);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
     padding: 0 1rem;
 
@@ -24,7 +25,7 @@ nav a:hover {
 }
 
 main{
-    display: flex;
+    display: grid;
     flex: 1;
     justify-content: space-between;
     padding: 1rem;
@@ -32,12 +33,7 @@ main{
     padding: 0 1rem;
 }
 
- header,
- main,
- footer {
-     width: 1000px;
-     margin: 0 auto;
- }
+
 
 header{
 
@@ -126,3 +122,31 @@ figcaption{
     text-align: center;
     font-style: italic;
 }
+
+/* To make page responsive Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .float-left,
+    .float-right {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    } }
