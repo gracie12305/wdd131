@@ -85,19 +85,3 @@ footer{
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-@media screen and (min-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    }
-}
