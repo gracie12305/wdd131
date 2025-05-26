@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santori, Greece</title>
+    <meta name="description" content="Place to visit, Santori,Greece page by Amma.">
+    <meta name="author" content="Amma G. Bossman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Santori,Greece</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/place-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/place-medium.webp" media="(min-width: 500px)">
+                <img src="images/place-small.webp" alt="Santori in Greece" width="500" height="250">
+            </picture>
+        </div>
+
+        <div class="wrapper">
+            <section class="info">
+                <h2>About Santorini</h2>
+                <p>Area:587,041 sq km</p>
+                <p>Population: 27,691,018",</p>
+                <P>Capital: Athens</P>
+                <p>language: Greek</p>
+                <p>Currency: Euro (€)</p>
+                <p>TimeZone: UTC+3</p>
+                <P>Calling Code: +30</P>
+                <P>Internet TLD: .gr</P>
+            </section>
+        
+            <!-- Weather section -->
+            <section class="weather">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <img src="images/sun-icon.svg" alt="Weather icon" class="mobile-icon" />
+                <p>Temperature: <span id="temp">25°F</span></p>
+                <p>Wind Speed: <span id="wind">5 mph</span></p>
+                <p>Wind Chill: <span id="windchill">...</span></p>
+            </section>
+        </div>
+            
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Amma G. Bossman | Mamzini</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
