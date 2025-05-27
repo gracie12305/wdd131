@@ -63,7 +63,7 @@ button{
 .gallery figcaption {
     margin-top: 0.5rem;
     font-size: 1rem;
-    color: #333; }
+    color: #F05E29; }
 
 .gallery img {
     width: 100%;
@@ -83,6 +83,10 @@ figure {
 h1{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
 }
 
 footer{
