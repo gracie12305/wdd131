@@ -5,8 +5,8 @@ body {
 }
 
 header{
-    background-color: orangered;
-    color: aliceblue;
+    background-color: #F05E29;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +43,7 @@ button{
 
 .gallery{
     display: grid;
-    grid-template-columns:  repeat(9, 1fr);
+    grid-template-columns:  repeat(3, 1fr);
     gap: 20px;
     align-items: center;
     margin: auto;
@@ -60,12 +60,18 @@ button{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333; }
+
 .gallery img {
     width: 100%;
     height: auto;
     display: block; }
 
 #menu-toggle {
+    display: none;
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -81,7 +87,38 @@ h1{
 
 footer{
     text-align: center;
-    background-color: orangered;
-    color: aliceblue;
+    background-color: #F05E29;
+    color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Show menu toggle button and hide nav links on small screens */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-menu {
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    #nav-menu a {
+        padding: 10px;
+        display: block;
+        color: white;
+    } 
+
+    .gallery figcaption {
+        font-size: 0.9rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 10px;
+        padding: 1rem;
+    }
+
 }
