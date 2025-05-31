@@ -13,3 +13,11 @@ nav {
 .gallery {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+#temple-container {
+    justify-content: space-around;
+}
+
+.temple-card {
+    width: 280px;
+}
