@@ -1,13 +1,10 @@
 :root{
-    --main-color: #3aa548;
+    --main-color: #5a189a;
     --text-color: #f8f5f5;
     --background-color: #fff;
-    --accent-col:  #8a2be2;
+    --accent-col:  #5a189a;
 }
-.hero img{
-    width: 100%;
-    height: auto;
-}
+
 
 header{
     background-color: var(--main-color);
@@ -26,47 +23,20 @@ footer{
     max-width: 1000px;
     margin: auto;
 }
-.section-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.info{
-    position: absolute;
-    bottom: 40%;
-    left: 25%;
-}
-
-.weather{
-    position: absolute;
-    bottom: 25%;
-    left: 65%;
-}
-
-.info,
-.weather {
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: var(--background-color);
-    border-radius: 5px;
-    flex: 1;
-}
-
-
-h2{
-    background-color:  var(--accent-col);
-    color: white;
-    margin-left: -20%;
-    padding: 0.5rem 1rem;
-    width: fit-content; 
-    border-radius: 5px;  
-}
 
 main{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.weather h2::before {
+    content: "⛅ ";
+    /* your emoticon with a trailing space */
+    font-size: 1.2em;
+    /* slightly bigger */
+    margin-right: 0.3em;
+    /* space after emoticon */
+    vertical-align: middle;
+    /* align nicely with text */ }
 
 footer{
     background-color: var(--main-color);
@@ -76,13 +46,19 @@ footer{
 }
 
 /* Make them side-by-side on wider screens */
-@media (min-width: 768px) {
-    .section-wrapper {
-        flex-direction: row;
+@media (min-width: 600px) {
+    .info, .weather {
+        position: static;
+        margin: 1rem auto;
+        width: 80%;
     }
 
-    .info,
-    .weather {
-        max-width: 48%;
+    .hero {
+        display: block;
     }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
 }

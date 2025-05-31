@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.info,
+.weather {
+    position: absolute;
+    padding: 0.6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: max-content;
+}
+
+.info {
+    top: 10%;
+    left: 5%;
+}
+
+.weather {
+    bottom: 10%;
+    right: 5%;
+}
+
+
+h2 {
+    background-color: var(--accent-col);
+    color: white;
+    margin-left: -10%;
+    padding: 0.2rem 0.7rem;
+    width: fit-content;
+    border-radius: 3px;
+}
