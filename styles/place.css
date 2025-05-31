@@ -28,15 +28,8 @@ main{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.weather h2::before {
-    content: "⛅ ";
-    /* your emoticon with a trailing space */
-    font-size: 1.2em;
-    /* slightly bigger */
-    margin-right: 0.3em;
-    /* space after emoticon */
-    vertical-align: middle;
-    /* align nicely with text */ }
+.weather h2 span {
+    margin-right: 0.8rem; }
 
 footer{
     background-color: var(--main-color);
