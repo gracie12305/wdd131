@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="Product review form by Amma. ">
+    <meta name="author" content="Amma G. Bossman">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+
+    
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <meta property="og:title" content="Product Review Form">
+    <meta property="og:description"
+        content="Explore business listings, local events, and opportunities with the Timbuku Chamber of Commerce. Connect, grow, and thrive in our community.">
+    <meta property="og:image" content="https://gracie12305.github.io/wdd231/chamber/images/heroimage2.jpg">
+    <meta property="og:url" content="https://gracie12305.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        
+        <form action="review.html" method="get">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset class="star-set">
+                <legend>Overall Rating:</legend>
+                <div class="stars">
+                    <div class="star-option">
+                        <label for="onestar">☆</label>
+                        <input type="radio" id="onestar" name="stars" value="1" required>
+                    </div>
+                    <div class="star-option">
+                        <label for="twostar">☆☆</label>
+                        <input type="radio" id="twostar" name="stars" value="2" required>
+                    </div>
+                    <div class="star-option">
+                        <label for="threestar">☆☆☆</label>
+                        <input type="radio" id="threestar" name="stars" value="3" required>
+                    </div>
+                    <div class="star-option">
+                        <label for="fourstar">☆☆☆☆</label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required>
+                    </div>
+                    <div class="star-option">
+                        <label for="fivestar">☆☆☆☆☆</label>
+                        <input type="radio" id="fivestar" name="stars" value="5" required>
+                    </div>
+                </div>
+                  
+                <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Star Rating Source Pen</a></div>
+
+
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installation-date">Date of Installation:</label>
+            <input type="date" id="installation-date" name="installationDate" required>
+
+            <!-- Useful Features -->
+            <fieldset class="checkbox-group">
+                <legend>Which features did you find useful<span class="check">(check all that apply)</span></legend>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+                <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+            </fieldset>
+
+            <label for="review">Written Review<span class="optional">(optional)</span></label>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+            <label for="username">Your Name<span class="optional">(optional)</span></label>
+            <input type="text" id="username" name="username">
+
+            <div class="submit-button"></div>
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🏵️ Amma G. Bossman 🏵️| Mamzini</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
