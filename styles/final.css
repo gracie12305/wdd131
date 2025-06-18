@@ -150,7 +150,25 @@ section {
     background-color: #e6c6fa;
 }
 
+.animate-left,
+.animate-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
+.animate-left {
+    transform: translateX(-100px);
+}
+
+.animate-up {
+    transform: translateY(100px);
+}
+
+.animate-visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
 
 footer {
     display: grid;
