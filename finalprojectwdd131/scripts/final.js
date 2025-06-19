@@ -35,6 +35,18 @@ document.addEventListener('DOMContentLoaded', () => {
     animateOnScroll(); // run on load
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const showFormBtn = document.getElementById("show-form-btn");
+    const formContainer = document.getElementById("volunteer-form");
+
+    showFormBtn.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent link from jumping
+        formContainer.style.display = "block";
+        formContainer.scrollIntoView({ behavior: "smooth" });
+    });
+});
+  
+
 //  To get the current y
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 

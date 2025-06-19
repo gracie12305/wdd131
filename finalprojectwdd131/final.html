@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HopeBuilders</title>
-    <meta name="description" content="Place to visit, Santori,Greece page by Amma.">
+    <meta name="description" content="This is website for people to give a helping hand to people in need, this is for charity and humanity by Amma.">
     <meta name="author" content="Amma G. Bossman">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +54,7 @@
                 <img src="images/buildvol.jpg" alt="Volunteer" />
                 <figcaption>
                     Volunteer sign-up for building and outreach
-                    <a href="#" class="info-link" data-info="Sign up to volunteer for home builds and community outreach events.">Click here</a>
+                    <a href="#" id="show-form-btn">Click here</a>
                 </figcaption>
             </figure>
             <figure>
@@ -89,6 +89,43 @@
                 <li><a href="#" class="faq-link">Can my business become a sponsor?</a></li>
             </ul>
         </section>
+
+        <div id="volunteer-form">
+            <div class="form-box"></div>
+                <h2>Volunteer Sign-up and Outreach</h2>
+                <form>
+                    <fieldset class="checkbox-group">
+                        <legend>What would you like to donate?</legend>
+                        <label><input type="checkbox" name="donation" value="clothes"> Clothes</label><br>
+                        <label><input type="checkbox" name="donation" value="money"> Money</label><br>
+                        <label><input type="checkbox" name="donation" value="food"> Food</label><br>
+                        <label><input type="checkbox" name="donation" value="jobs"> Jobs</label><br>
+                        <label><input type="checkbox" name="donation" value="more"> More</label><br>
+                    </fieldset>
+            
+                    <label for="why-help">Why are you willing to help?</label><br>
+                    <textarea id="why-help" name="why-help" rows="4" cols="50"
+                        placeholder="Share your reason..."></textarea><br><br>
+            
+                    <label for="fullname">Your Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+            
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+            
+                    <fieldset>
+                        <legend>Would you like to volunteer in building a house?</legend>
+                        <label><input type="radio" name="house-volunteer" value="yes"> Yes</label>
+                        <label><input type="radio" name="house-volunteer" value="no"> No</label>
+                    </fieldset><br>
+
+                    <div class="submit-button">
+                        <input type="submit">Submit</input>
+                    </div>
+                </form>
+            </div>
+        </div>
+          
 
       
     </main>
