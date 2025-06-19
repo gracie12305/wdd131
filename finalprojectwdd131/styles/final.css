@@ -126,6 +126,15 @@ section {
     cursor: pointer;
 }
 
+#show-form-btn{
+    display: block;
+    margin-top: 5px;
+    color: #7c247c;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .info-link:hover {
     color: #e4480f;
 }
