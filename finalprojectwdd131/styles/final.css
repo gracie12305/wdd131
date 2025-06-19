@@ -182,21 +182,15 @@ section {
 
 #volunteer-form{
     display: none;
-    background-color: #ac48ac;
+    background-color: #f0d9ff;
     color: #333;
     margin: auto;
     max-width: 600px;
+    padding-bottom: 5rem;
 }
 
-/* FORM BOX CONTAINER */
-.form-box {
-    background-color: white;
-    color: black;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 10px;
-    max-width: 600px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+#volunteer-form h2{
+    color: #333;
 }
 
 
@@ -278,6 +272,10 @@ footer img{
 
     main{
         font-size: 0.8rem;
+    }
+
+    #volunteer-form{
+        max-width: 400px;
     }
 
     .links-grid {
